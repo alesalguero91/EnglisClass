@@ -1,0 +1,29 @@
+<h1>Verb TO BE</h1>
+<h3>Coloque el verbo en el lugar indicado</h3>
+<br>
+<div>
+ <form action="" style="background-color: cadetblue;">
+  <div class="row">
+    <div class="col-lg-4">
+      <h4 class="montserrat">to do</h4>
+      <div cdkDropList class="example-list" [cdkDropListData]="todo" [cdkDropListConnectedTo]="['prog']" (cdkDropListDropped)="drop($event)" id="tarea" >
+        <div style="background-color: aliceblue;" class="example-box" *ngFor="let td of todo" cdkDrag>{{td}}</div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h4 class="montserrat">In progress</h4>
+      <div cdkDropList class="example-list" id="prog" [cdkDropListData]="progress" [cdkDropListConnectedTo]="['tarea','don']" (cdkDropListDropped)="drop($event)" >
+        <div style="background-color: aliceblue;" class="example-box" *ngFor="let pr of progress" cdkDrag>{{pr}}</div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h4 class="montserrat">Done</h4>
+      <div cdkDropList class="example-list" id="don" [cdkDropListData]="done" [cdkDropListConnectedTo]="['prog']" (cdkDropListDropped)="drop($event)" >
+        <div style="background-color: aliceblue;" class="example-box" *ngFor="let pr of done" cdkDrag>{{pr}}</div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+ </form>
+</div>

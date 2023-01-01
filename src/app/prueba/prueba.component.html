@@ -1,0 +1,83 @@
+<div class="container">
+  <div>
+    <h1>Hola</h1>
+  </div>
+  <div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+
+  <!--<div>
+    <div
+    cdkDropList
+    class="col-6"
+    #ln1="cdkDropList"
+    [cdkDropListData]="listNumber1"
+    [cdkDropListConnectedTo]="[ln2]"
+    (cdkDropListDropped)="drop($event)">
+    <div cdkDrag class="block block-1" *ngFor="let n of listNumber1">
+      <span>{{n}}</span>
+    </div>
+    </div>
+    <div
+    cdkDropList
+    class="col-6"
+    #ln2="cdkDropList"
+    [cdkDropListData]="listNumber2"
+    [cdkDropListConnectedTo]="[ln1]"
+    (cdkDropListDropped)="drop($event)">
+    <div cdkDrag class="block block-2" *ngFor="let n of listNumber2">
+      <span>{{n}}</span>
+    </div>
+    </div>
+  </div>
+  --->
+  <h2>______________________</h2>
+  <br>
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+  </div>
+
+  <h1>---------------------</h1>
+  <br><br>
+  <h2>Select option</h2>
+  <br>
+
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Pais</label>
+    <div class="col-sm-5">
+      <select id="inputState" class="form-control" [(ngModel)]="usuario.pais">
+        <option value="" selected>Seleccione</option>
+        <option *ngFor="let pais of paises"[value]="pais.codigo">{{pais.nombre}}</option>
+      </select>
+    </div>
+  </div>
+  <br><br>
+  <fieldset>
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="radio1"
+          value="Hombre" [(ngModel)]="usuario.sexo" name="sexo">
+          <label class="form-check-label" for="inLineRadio1">Hombre</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="radio1"
+          value="Mujer" [(ngModel)]="usuario.sexo" name="sexo">
+          <label class="form-check-label" for="inLineRadio1">Mujer</label>
+        </div>
+      </legend>
+    </div>
+  </fieldset>
+  <br><br>
+
+  <div class="form-group row">
+    <div class="col-sm-2">Acepta</div><br>
+    <input class="form-check-input" type="checkbox" id="chk1" [(ngModel)]="usuario.acepta" name="acepta">
+    <label class="form-check-label" for="gridCheck1">
+      Acepto términos y condiciones
+    </label>
+  </div>
+</div>
+<pre>
+  {{ usuario | json}}
+</pre>

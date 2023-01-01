@@ -1,0 +1,128 @@
+<div class="container">
+  <h3 style="text-align: center;">Coloque con los pronombres correspondientes</h3>
+  <br>
+  <div>
+    <h4>Verbos: </h4>
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDeVerbos" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listVerb">
+      <div class="example-box" *ngFor="let timePeriod of listasDeVerbos" cdkDrag>{{timePeriod}}</div>
+    </div>
+
+  </div>
+  <br>
+  <form action="">
+    <div class="row">
+      <table>
+        <tbody>
+          <tr>
+            <td>I </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt1" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt1" [(ngModel)]="usuario.resp1" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt1">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct1}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj1}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>You </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt2" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt2" [(ngModel)]="opt2" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt2">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct2}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj2}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>He </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt3" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt3" [(ngModel)]="opt3" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt3">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct3}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj3}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>She </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt4" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt4" [(ngModel)]="opt4" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt4">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct4}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj4}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>It </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt5" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt5" [(ngModel)]="opt5" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt5">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct5}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj5}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>We </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt6" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt6" [(ngModel)]="opt6" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt6">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct6}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj6}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>They </td>
+            <td>
+              <div cdkDropList class="example-list2" [cdkDropListData]="opt7" [cdkDropListConnectedTo]="['listVerb']" (cdkDropListDropped)="drop($event)" id="opt7" [(ngModel)]="opt7" required>
+                <div class="example-box" cdkDrag *ngFor="let op of opt7">{{op}}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{correct7}}</div>
+            </td>
+            <td>
+              <div *ngIf="mostrar">{{msj7}}</div>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+    <button class="btn btn-primary" (click)="verRespuestas(total,res1,res2,res3,res4,res5,res6,res7)">Ver</button>
+  </form>
+  <br>
+  <br>
+</div>
+
+<pre>
+
+  {{ opt1 | json}}
+  {{ total | json}}
+</pre>
