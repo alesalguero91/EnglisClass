@@ -44,13 +44,13 @@ export class ToBeDrapDrpComponent implements OnInit {
   correct6:string="are"
   correct7:string="are"
 
-  msj1="Error"
-  msj2="Error"
-  msj3="Error"
-  msj4="Error"
-  msj5="Error"
-  msj6="Error"
-  msj7="Error"
+  msj1=false
+  msj2=false
+  msj3=false
+  msj4=false
+  msj5=false
+  msj6=false
+  msj7=false
 
   mostrar = false
 
@@ -85,31 +85,31 @@ export class ToBeDrapDrpComponent implements OnInit {
 
     if(this.opt1[0]=== this.correct1){
       res1 += 1
-      this.msj1 = "bien"
+      this.msj1 = true
     }
     if(this.opt2[0]=== this.correct2){
       res2 += 1
-      this.msj2 = "bien"
+      this.msj2 = true
     }
     if(this.opt3[0]=== this.correct3){
       res3 += 1
-      this.msj3 = "bien"
+      this.msj3 = true
     }
     if(this.opt4[0]=== this.correct4){
       res4 += 1
-      this.msj4 = "bien"
+      this.msj4 = true
     }
     if(this.opt5[0]=== this.correct5){
       res5 += 1
-      this.msj5 = "bien"
+      this.msj5 = true
     }
     if(this.opt6[0]=== this.correct6){
       res6 += 1
-      this.msj6 = "bien"
+      this.msj6 = true
     }
     if(this.opt7[0]=== this.correct7){
       res7 += 1
-      this.msj7 = "bien"
+      this.msj7 = true
 
     } if(!this.mostrar){
       this.mostrar=true
@@ -117,7 +117,7 @@ export class ToBeDrapDrpComponent implements OnInit {
 
     pretotal=(res1 + res2 + res3 + res4 + res5 + res6 + res7)
 
-    alert('Su puntuacion es: ' + pretotal + '/7 ' + this.mostrar)
+    alert('Su puntuacion es: ' + pretotal + '/7.')
   }
 
 

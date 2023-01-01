@@ -24,7 +24,10 @@
               <div *ngIf="mostrar">{{correct1}}</div>
             </td>
             <td>
-              <div *ngIf="mostrar">{{msj1}}</div>
+              <div *ngIf="mostrar">
+                <a *ngIf="msj1" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!msj1" class="text-danger"><i class="bi bi-x-lg"></i></a>
+              </div>
             </td>
           </tr>
           <tr>
@@ -37,9 +40,10 @@
             <td>
               <div *ngIf="mostrar">{{correct2}}</div>
             </td>
-            <td>
-              <div *ngIf="mostrar">{{msj2}}</div>
-            </td>
+            <div *ngIf="mostrar">
+              <a *ngIf="msj2" class="text-success"><i class="bi bi-check2"></i></a>
+              <a *ngIf="!msj2" class="text-danger"><i class="bi bi-x-lg"></i></a>
+            </div>
           </tr>
           <tr>
             <td>He </td>
@@ -51,9 +55,10 @@
             <td>
               <div *ngIf="mostrar">{{correct3}}</div>
             </td>
-            <td>
-              <div *ngIf="mostrar">{{msj3}}</div>
-            </td>
+            <div *ngIf="mostrar">
+              <a *ngIf="msj3" class="text-success"><i class="bi bi-check2"></i></a>
+              <a *ngIf="!msj3" class="text-danger"><i class="bi bi-x-lg"></i></a>
+            </div>
           </tr>
           <tr>
             <td>She </td>
@@ -65,9 +70,10 @@
             <td>
               <div *ngIf="mostrar">{{correct4}}</div>
             </td>
-            <td>
-              <div *ngIf="mostrar">{{msj4}}</div>
-            </td>
+            <div *ngIf="mostrar">
+              <a *ngIf="msj4" class="text-success"><i class="bi bi-check2"></i></a>
+              <a *ngIf="!msj4" class="text-danger"><i class="bi bi-x-lg"></i></a>
+            </div>
           </tr>
           <tr>
             <td>It </td>
@@ -79,9 +85,10 @@
             <td>
               <div *ngIf="mostrar">{{correct5}}</div>
             </td>
-            <td>
-              <div *ngIf="mostrar">{{msj5}}</div>
-            </td>
+            <div *ngIf="mostrar">
+              <a *ngIf="msj5" class="text-success"><i class="bi bi-check2"></i></a>
+              <a *ngIf="!msj5" class="text-danger"><i class="bi bi-x-lg"></i></a>
+            </div>
           </tr>
           <tr>
             <td>We </td>
@@ -93,9 +100,10 @@
             <td>
               <div *ngIf="mostrar">{{correct6}}</div>
             </td>
-            <td>
-              <div *ngIf="mostrar">{{msj6}}</div>
-            </td>
+            <div *ngIf="mostrar">
+              <a *ngIf="msj6" class="text-success"><i class="bi bi-check2"></i></a>
+              <a *ngIf="!msj6" class="text-danger"><i class="bi bi-x-lg"></i></a>
+            </div>
           </tr>
           <tr>
             <td>They </td>
@@ -108,7 +116,10 @@
               <div *ngIf="mostrar">{{correct7}}</div>
             </td>
             <td>
-              <div *ngIf="mostrar">{{msj7}}</div>
+              <div *ngIf="mostrar">
+                <a *ngIf="msj7" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!msj7" class="text-danger"><i class="bi bi-x-lg"></i></a>
+              </div>
             </td>
           </tr>
         </tbody>

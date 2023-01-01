@@ -9,6 +9,7 @@ import { Clase1Component } from './clase1/clase1.component';
 import { FormsModule } from '@angular/forms';
 import { VerbToBeComponent } from './clase1/verb-to-be/verb-to-be.component';
 import { ToBeDrapDrpComponent } from './clase1/to-be-drap-drp/to-be-drap-drp.component';
+import { ToBeSelectOptComponent } from './clase1/to-be-select-opt/to-be-select-opt.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ToBeDrapDrpComponent } from './clase1/to-be-drap-drp/to-be-drap-drp.com
     PruebaComponent,
     Clase1Component,
     VerbToBeComponent,
-    ToBeDrapDrpComponent
+    ToBeDrapDrpComponent,
+    ToBeSelectOptComponent
   ],
   imports: [
     BrowserModule,
