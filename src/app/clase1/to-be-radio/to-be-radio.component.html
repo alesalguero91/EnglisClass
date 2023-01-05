@@ -1,0 +1,231 @@
+<h1>Escuche el audio y seleccione la opcion correcta</h1>
+<div class="container">
+  <div class="row">
+    <ol>
+       <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/heIsMyBrother.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose1" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose1" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+          <legend class="" *ngFor="let cn of cons1">
+
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg1"
+              value="no" [(ngModel)]="preg1" name="preg1">
+              <label class="form-check-label">{{cn.opt1}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg1"
+              value="si" [(ngModel)]="preg1" name="preg1">
+              <label class="form-check-label">{{cn.opt2}}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="preg1"
+              value="tam" [(ngModel)]="preg1" name="preg1">
+              <label class="form-check-label">{{cn.opt3}}</label>
+            </div>
+          </legend>
+
+      </li>
+
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/MyMotherAndIAreBritish.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose2" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose2" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+          <legend class=" " *ngFor="let cn of cons2">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg2"
+              value="no" [(ngModel)]="preg2" name="preg2">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg2"
+              value="tam" [(ngModel)]="preg2" name="preg2">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg2"
+              value="si" [(ngModel)]="preg2" name="preg2">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/TheyAreStudents.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose3" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose3" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+
+          <legend class=" " *ngFor="let cn of cons3">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg3"
+              value="si" [(ngModel)]="preg3" name="preg3">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg3"
+              value="no" [(ngModel)]="preg3" name="preg3">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg3"
+              value="tam" [(ngModel)]="preg3" name="preg3">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/IAmAtHomeRightNow.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose4" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose4" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+
+          <legend class=" " *ngFor="let cn of cons4">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg4"
+              value="si" [(ngModel)]="preg4" name="preg4">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg4"
+              value="no" [(ngModel)]="preg4" name="preg4">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg4"
+              value="tam" [(ngModel)]="preg4" name="preg4">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/WeAreAtTheHospital.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose5" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose5" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+
+          <legend class=" " *ngFor="let cn of cons5">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg5"
+              value="tam" [(ngModel)]="preg5" name="preg5">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg5"
+              value="no" [(ngModel)]="preg5" name="preg5">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg5"
+              value="si" [(ngModel)]="preg5" name="preg5">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/ItIsnineOClock.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose6" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose6" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+
+          <legend class=" " *ngFor="let cn of cons6">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg6"
+              value="tam" [(ngModel)]="preg6" name="preg6">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg6"
+              value="si" [(ngModel)]="preg6" name="preg6">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg6"
+              value="no" [(ngModel)]="preg6" name="preg6">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <td>
+              <audio src="../../../assets/sounds/YouAreMyFriend.mp3" controls></audio>
+            </td>
+            <td>
+              <p *ngIf="mostrar"><a *ngIf="choose7" class="text-success"><i class="bi bi-check2"></i></a>
+                <a *ngIf="!choose7" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+            </td>
+          </tbody>
+        </table>
+
+          <legend class=" " *ngFor="let cn of cons7">
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg7"
+              value="si" [(ngModel)]="preg7" name="preg7">
+              <label class="form-check-label" >{{cn.opt1}}</label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="radio" id="preg7"
+              value="tam" [(ngModel)]="preg7" name="preg7">
+              <label class="form-check-label" >{{cn.opt2}}</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="preg7"
+              value="no" [(ngModel)]="preg7" name="preg7">
+              <label class="form-check-label" >{{cn.opt3}}</label>
+            </div>
+          </legend>
+      </li>
+
+    </ol>
+    <div>
+      <button class="btn btn-primary" (click)="listo()">Ok</button>
+    </div>
+  </div>
+</div>
+<br>
+

@@ -1,16 +1,14 @@
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
-import { setupMaster } from 'cluster';
 
 @Component({
-  selector: 'app-to-be-drap-drp',
-  templateUrl: './to-be-drap-drp.component.html',
-  styleUrls: ['./to-be-drap-drp.component.css']
+  selector: 'app-pron-drag-drop',
+  templateUrl: './pron-drag-drop.component.html',
+  styleUrls: ['./pron-drag-drop.component.css']
 })
-export class ToBeDrapDrpComponent implements OnInit {
+export class PronDragDropComponent implements OnInit {
 
-
-  listasDeVerbos:string[]=['are', 'is', 'is',  'are', 'am', 'are',  'is']
+  listasDePron:string[]= ['He', 'You', 'It', 'We', 'She', 'They', 'I']
 
 
   opt1:string[]=[]
@@ -31,13 +29,13 @@ export class ToBeDrapDrpComponent implements OnInit {
   res6:number = 0
   res7:number = 0
 
-  correct1:string="am"
-  correct2:string="are"
-  correct3:string="is"
-  correct4:string="is"
-  correct5:string="is"
-  correct6:string="are"
-  correct7:string="are"
+  correct1:string="I"
+  correct2:string="You"
+  correct3:string="He"
+  correct4:string="She"
+  correct5:string="It"
+  correct6:string="We"
+  correct7:string="They"
 
   msj1=false
   msj2=false
@@ -49,10 +47,10 @@ export class ToBeDrapDrpComponent implements OnInit {
 
   mostrar = false
 
+
   constructor() { }
 
   ngOnInit(): void {
-
   }
 
   drop($event: CdkDragDrop<string[]>){
@@ -114,8 +112,5 @@ export class ToBeDrapDrpComponent implements OnInit {
 
     alert('Su puntuacion es: ' + pretotal + '/7.')
   }
-
-
-
 
 }

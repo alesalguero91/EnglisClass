@@ -10,6 +10,12 @@ import { FormsModule } from '@angular/forms';
 import { VerbToBeComponent } from './clase1/verb-to-be/verb-to-be.component';
 import { ToBeDrapDrpComponent } from './clase1/to-be-drap-drp/to-be-drap-drp.component';
 import { ToBeSelectOptComponent } from './clase1/to-be-select-opt/to-be-select-opt.component';
+import { PronDragDropComponent } from './clase1/pron-drag-drop/pron-drag-drop.component';
+import { ToBeInputComponent } from './clase1/to-be-input/to-be-input.component';
+import { ToBeRadioComponent } from './clase1/to-be-radio/to-be-radio.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { ToBeSelectOptComponent } from './clase1/to-be-select-opt/to-be-select-o
     Clase1Component,
     VerbToBeComponent,
     ToBeDrapDrpComponent,
-    ToBeSelectOptComponent
+    ToBeSelectOptComponent,
+    PronDragDropComponent,
+    ToBeInputComponent,
+    ToBeRadioComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

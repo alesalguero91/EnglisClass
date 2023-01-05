@@ -1,2 +1,108 @@
-<h1>Select the correct option</h1>
+<h2>Select option</h2>
+  <br>
 
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Pais</label>
+    <div class="col-sm-8">
+      <ol>
+        <li>
+          He <select id="inputState" class="form-control" [(ngModel)]="usuario.opt1">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta1"[value]="opt.valor">{{opt.txt}}</option>
+          </select> my brother. <p *ngIf="verResp"><a *ngIf="resp1" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp1" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          My sister <select id="inputState" class="form-control" [(ngModel)]="usuario.opt2">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta2"[value]="opt.valor">{{opt.txt}}</option>
+          </select> a student. <p *ngIf="verResp"><a *ngIf="resp2" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp2" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          I <select id="inputState" class="form-control" [(ngModel)]="usuario.opt3">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta3"[value]="opt.valor">{{opt.txt}}</option>
+          </select>from Argentina.<p *ngIf="verResp"><a *ngIf="resp3" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp3" class="text-danger"><i class="bi bi-x-lg"></i></a></p><br>
+        </li>
+        <li>
+          Nick and Sam<select id="inputState" class="form-control" [(ngModel)]="usuario.opt4">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta4"[value]="opt.valor">{{opt.txt}}</option>
+          </select> My Friends.<p *ngIf="verResp"><a *ngIf="resp4" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp4" class="text-danger"><i class="bi bi-x-lg"></i></a></p><br>
+        </li>
+        <li>
+          Laura <select id="inputState" class="form-control" [(ngModel)]="usuario.opt5">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta5"[value]="opt.valor">{{opt.txt}}</option>
+          </select> so beautiful.<p *ngIf="verResp"><a *ngIf="resp5" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp5" class="text-danger"><i class="bi bi-x-lg"></i></a></p><br>
+        </li>
+        <li>
+          My car <select id="inputState" class="form-control" [(ngModel)]="usuario.opt6">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta6"[value]="opt.valor">{{opt.txt}}</option>
+          </select> blue.
+          <p *ngIf="verResp"><a *ngIf="resp6" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp6" class="text-danger"><i class="bi bi-x-lg"></i></a></p><br>
+        </li>
+        <li>
+          My mother and I <select id="inputState" class="form-control" [(ngModel)]="usuario.opt7">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta7"[value]="opt.valor">{{opt.txt}}</option>
+          </select> tall.<p *ngIf="verResp"><a *ngIf="resp7" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp7" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          It <select id="inputState" class="form-control" [(ngModel)]="usuario.opt8">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta8"[value]="opt.valor">{{opt.txt}}</option>
+          </select> a great idea!.<p *ngIf="verResp"><a *ngIf="resp8" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp8" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          Your father <select id="inputState" class="form-control" [(ngModel)]="usuario.opt9">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta9"[value]="opt.valor">{{opt.txt}}</option>
+          </select> late. <p *ngIf="verResp"><a *ngIf="resp9" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp9" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          I <select id="inputState" class="form-control" [(ngModel)]="usuario.opt10">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta10"[value]="opt.valor">{{opt.txt}}</option>
+          </select> a bit nervious.<p *ngIf="verResp"><a *ngIf="resp10" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp10" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          You <select id="inputState" class="form-control" [(ngModel)]="usuario.opt11">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta11"[value]="opt.valor">{{opt.txt}}</option>
+          </select> a good student!. <p *ngIf="verResp"><a *ngIf="resp11" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp11" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+        <li>
+          Your mother <select id="inputState" class="form-control" [(ngModel)]="usuario.opt12">
+            <option value="0" selected>Select one option: </option>
+            <option *ngFor="let opt of pregunta12"[value]="opt.valor">{{opt.txt}}</option>
+          </select> taller than the mine. <p *ngIf="verResp"><a *ngIf="resp12" class="text-success"><i class="bi bi-check2"></i></a>
+            <a *ngIf="!resp12" class="text-danger"><i class="bi bi-x-lg"></i></a></p>
+          <br>
+        </li>
+      </ol>
+      <button class="btn btn-success" (click)="resultado()">Ver</button>
+    </div>
+
+  </div>
+<pre>
+  {{usuario | json}}
+</pre>
