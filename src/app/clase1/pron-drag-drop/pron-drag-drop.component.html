@@ -1,10 +1,12 @@
 <div class="container">
   <h3 style="text-align: center;">Coloque con los pronombres correspondientes</h3>
   <br>
-  <div>
+  <div class="row">
     <h4>Pronombres Personales: </h4>
-    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDePron" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listasDePron">
-      <div class="example-box" *ngFor="let timePeriod of listasDePron" cdkDrag>{{timePeriod}}</div>
+    <div class="col-10">
+      <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDePron" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listasDePron">
+        <div class="example-box" *ngFor="let timePeriod of listasDePron" cdkDrag>{{timePeriod}}</div>
+      </div>
     </div>
 
   </div>

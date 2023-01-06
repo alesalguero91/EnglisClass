@@ -16,6 +16,7 @@ import { ToBeRadioComponent } from './clase1/to-be-radio/to-be-radio.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListaClassComponent } from './lista-class/lista-class.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     ToBeRadioComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListaClassComponent
   ],
   imports: [
     BrowserModule,
