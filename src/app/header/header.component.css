@@ -1,9 +1,9 @@
 img{
-  width: 200px;
+  width: 250px;
 }
 
 #todohead{
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgb(2, 1, 27) 60%, rgba(20,17,82,1) 100%, rgba(0,16,255,1) 100%, rgba(16,9,121,0.6657754010695187) 100%);
-
+  width: 100%;
 }

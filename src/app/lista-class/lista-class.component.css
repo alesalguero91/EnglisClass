@@ -1,0 +1,9 @@
+#todo{
+
+  background-color: rgb(153, 153, 192);
+  min-height: calc(100vh - 224px);
+}
+
+.card-body{
+  background-color: rgb(153, 153, 192);
+}
