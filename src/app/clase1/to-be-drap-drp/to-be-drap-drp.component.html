@@ -4,11 +4,12 @@
   <div class="row">
     <h4>Verbos: </h4>
     <div class="col-10">
-      <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDeVerbos" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listVerb">
-        <div class="example-box" *ngFor="let timePeriod of listasDeVerbos" cdkDrag>{{timePeriod}}</div>
-      </div>
+
       <form action="">
         <div class="row">
+          <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDeVerbos" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listVerb">
+            <div class="example-box" *ngFor="let timePeriod of listasDeVerbos" cdkDrag>{{timePeriod}}</div>
+          </div>
           <table class="col-6">
             <tbody>
               <tr>
@@ -121,10 +122,13 @@
                 </td>
               </tr>
             </tbody>
+            <div style="text-align: center;">
+              <button class="btn btn-primary" (click)="verRespuestas(total,res1,res2,res3,res4,res5,res6,res7)">Listo</button>
+            </div>
 
           </table>
         </div>
-        <button class="btn btn-primary" (click)="verRespuestas(total,res1,res2,res3,res4,res5,res6,res7)">Ver</button>
+
       </form>
     </div>
 

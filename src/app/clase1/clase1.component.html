@@ -17,19 +17,27 @@
       </div>
       <div *ngIf="tarea1">
         <app-pron-drag-drop></app-pron-drag-drop>
-        <button class="btn btn-primary" (click)="Seleccion2()" style="text-align: right;">Siguiente</button>
+        <div style="text-align: end;">
+          <button class="btn btn-primary" (click)="Seleccion2()" style="text-align: right;">Siguiente</button>
+        </div>
       </div>
       <div *ngIf="tarea2">
         <app-to-be-drap-drp></app-to-be-drap-drp>
-        <button (click)="seleccion3()" class="btn btn-primary" style="text-align: right;">Siguiente</button>
-      </div>
+        <div style="text-align: end;">
+          <button class="btn btn-primary" (click)="seleccion3()" style="text-align: right;">Siguiente</button>
+        </div>
+       </div>
       <div *ngIf="tarea3">
         <app-to-be-select-opt></app-to-be-select-opt>
-        <button (click)="seleccion4()" class="btn btn-primary" style="text-align: right;">Siguiente</button>
+        <div style="text-align: end;">
+          <button class="btn btn-primary" (click)="seleccion4()" style="text-align: right;">Siguiente</button>
+        </div>
       </div>
       <div *ngIf="tarea4">
         <app-to-be-input></app-to-be-input>
-        <button (click)="seleccion5()" class="btn btn-primary">Siguiente</button>
+        <div style="text-align: end;">
+          <button class="btn btn-primary" (click)="seleccion5()" style="text-align: right;">Siguiente</button>
+        </div>
       </div>
       <div *ngIf="tarea5" class="btn btn-primary">
         <app-to-be-radio></app-to-be-radio>
