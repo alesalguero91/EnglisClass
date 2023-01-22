@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListaClassComponent } from './lista-class/lista-class.component';
 import { BannerComponent } from './banner/banner.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { CarrusComponent } from './carrus/carrus.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { InicioComponent } from './inicio/inicio.component';
     FooterComponent,
     ListaClassComponent,
     BannerComponent,
-    InicioComponent
+    InicioComponent,
+    CarrusComponent
   ],
   imports: [
     BrowserModule,
