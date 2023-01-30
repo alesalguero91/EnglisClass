@@ -1,11 +1,11 @@
 #todo{
 
-  background-color: rgb(192, 192, 230);
+  background-color: rgb(238, 238, 245);
   min-height: calc(100vh - 224px);
 }
 
 .card-body{
-  background-color: rgb(192, 192, 230);
+  background-color: rgb(238, 238, 245);
 }
 .botonst{
   color: rgb(240, 215, 215);
