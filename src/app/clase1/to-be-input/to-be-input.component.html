@@ -82,7 +82,15 @@
       </li>
 
     </ol>
-    <button class="btn btn-primary" (click)="mostrarResp()">Ok</button>
+    <div *ngIf="!rehacer">
+      <button class="btn btn-light" (click)="mostrarResp()">Ok</button>
+    </div>
+    <div *ngIf="rehacer">
+      <button (click)="redo()" class="btn btn-light">Rehacer</button>
+    </div>
+
+
+
 
 </div>
 

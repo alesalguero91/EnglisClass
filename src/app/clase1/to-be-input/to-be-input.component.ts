@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-to-be-input',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./to-be-input.component.css']
 })
 export class ToBeInputComponent implements OnInit {
+
+  rehacer = false
 
   preg1: string=""
   preg2: string=""
@@ -67,6 +70,8 @@ export class ToBeInputComponent implements OnInit {
   }
 
   mostrarResp(){
+
+
     if(this.resp1 === this.preg1){
       this.val1+=1
       this.show1=true
@@ -122,7 +127,38 @@ export class ToBeInputComponent implements OnInit {
 
     this.mostrarTodo = true
     alert("Respondiste bien " + total + "/12")
+    this.rehacer=true
+  }
 
+  redo(){
+    this.preg1=""
+    this.preg2=""
+    this.preg3=""
+    this.preg4=""
+    this.preg5=""
+    this.preg6=""
+    this.preg7=""
+    this.preg8=""
+    this.preg9=""
+    this.preg10=""
+    this.preg11=""
+    this.preg12=""
+
+    this.val1=0
+    this.val2=0
+    this.val3=0
+    this.val4=0
+    this.val5=0
+    this.val6=0
+    this.val7=0
+    this.val8=0
+    this.val9=0
+    this.val10=0
+    this.val11=0
+    this.val12=0
+
+    this.mostrarTodo=false
+    this.rehacer=false
   }
 
 }
