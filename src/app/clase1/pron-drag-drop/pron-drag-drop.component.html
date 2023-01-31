@@ -15,7 +15,7 @@
               <tr>
                 <td>Yo </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt1" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt1" [(ngModel)]="opt1" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt1" [cdkDropListConnectedTo]="['listasDePron','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt1" [(ngModel)]="opt1" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt1">{{op}}</div>
                   </div>
                 </td>
@@ -32,7 +32,7 @@
               <tr>
                 <td>Tú </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt2" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt2" [(ngModel)]="opt2" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt2" [cdkDropListConnectedTo]="['listasDePron','opt1','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt2" [(ngModel)]="opt2" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt2">{{op}}</div>
                   </div>
                 </td>
@@ -47,7 +47,7 @@
               <tr>
                 <td>El </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt3" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt3" [(ngModel)]="opt3" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt3" [cdkDropListConnectedTo]="['listasDePron','opt1','opt2','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt3" [(ngModel)]="opt3" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt3">{{op}}</div>
                   </div>
                 </td>
@@ -62,7 +62,7 @@
               <tr>
                 <td>Ella </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt4" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt4" [(ngModel)]="opt4" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt4" [cdkDropListConnectedTo]="['listasDePron','opt1','opt2','opt3','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt4" [(ngModel)]="opt4" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt4">{{op}}</div>
                   </div>
                 </td>
@@ -77,7 +77,7 @@
               <tr>
                 <td>Esto/Eso </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt5" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt5" [(ngModel)]="opt5" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt5" [cdkDropListConnectedTo]="['listasDePron','opt1','opt2','opt3','opt4','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt5" [(ngModel)]="opt5" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt5">{{op}}</div>
                   </div>
                 </td>
@@ -92,7 +92,7 @@
               <tr>
                 <td>Nosotros/Nosotras </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt6" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt6" [(ngModel)]="opt6" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt6" [cdkDropListConnectedTo]="['listasDePron','opt1','opt2','opt3','opt4','opt5','opt7']" (cdkDropListDropped)="drop($event)" id="opt6" [(ngModel)]="opt6" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt6">{{op}}</div>
                   </div>
                 </td>
@@ -107,7 +107,7 @@
               <tr>
                 <td>Ellos/Ellas </td>
                 <td>
-                  <div cdkDropList class="example-list2" [cdkDropListData]="opt7" [cdkDropListConnectedTo]="['listasDePron']" (cdkDropListDropped)="drop($event)" id="opt7" [(ngModel)]="opt7" required>
+                  <div cdkDropList class="example-list2" [cdkDropListData]="opt7" [cdkDropListConnectedTo]="['listasDePron','opt1','opt2','opt3','opt4','opt5','opt6']" (cdkDropListDropped)="drop($event)" id="opt7" [(ngModel)]="opt7" required>
                     <div class="example-box" cdkDrag *ngFor="let op of opt7">{{op}}</div>
                   </div>
                 </td>
