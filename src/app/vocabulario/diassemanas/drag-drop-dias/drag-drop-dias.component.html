@@ -1,0 +1,143 @@
+<div class="container">
+  <h3 style="text-align: center;">Coloque los días en ingles con su significado en español</h3>
+  <br>
+  <div class="row">
+    <h4>Días: </h4>
+    <div class="col-10">
+      <form action="">
+        <div class="row">
+          <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" [cdkDropListData]="listasDeDias" [cdkDropListConnectedTo]="['opt1','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="listasDeDias">
+            <div class="example-box" *ngFor="let timePeriod of listasDeDias" cdkDrag>{{timePeriod}}</div>
+          </div>
+          <div>
+            <table class="col-6">
+              <tbody>
+                <tr>
+                  <td>Lunes </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt1" [cdkDropListConnectedTo]="['listasDeDias','opt2','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt1" [(ngModel)]="opt1" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt1">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct1}}</div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">
+                      <a *ngIf="msj1" class="text-success"><i class="bi bi-check2"></i></a>
+                      <a *ngIf="!msj1" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Martes </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt2" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt3','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt2" [(ngModel)]="opt2" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt2">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct2}}</div>
+                  </td>
+                  <div *ngIf="mostrar">
+                    <a *ngIf="msj2" class="text-success"><i class="bi bi-check2"></i></a>
+                    <a *ngIf="!msj2" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                  </div>
+                </tr>
+                <tr>
+                  <td>Miercoles</td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt3" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt2','opt4','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt3" [(ngModel)]="opt3" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt3">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct3}}</div>
+                  </td>
+                  <div *ngIf="mostrar">
+                    <a *ngIf="msj3" class="text-success"><i class="bi bi-check2"></i></a>
+                    <a *ngIf="!msj3" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                  </div>
+                </tr>
+                <tr>
+                  <td>Jueves </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt4" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt2','opt3','opt5','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt4" [(ngModel)]="opt4" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt4">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct4}}</div>
+                  </td>
+                  <div *ngIf="mostrar">
+                    <a *ngIf="msj4" class="text-success"><i class="bi bi-check2"></i></a>
+                    <a *ngIf="!msj4" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                  </div>
+                </tr>
+                <tr>
+                  <td>Viernes </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt5" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt2','opt3','opt4','opt6','opt7']" (cdkDropListDropped)="drop($event)" id="opt5" [(ngModel)]="opt5" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt5">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct5}}</div>
+                  </td>
+                  <div *ngIf="mostrar">
+                    <a *ngIf="msj5" class="text-success"><i class="bi bi-check2"></i></a>
+                    <a *ngIf="!msj5" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                  </div>
+                </tr>
+                <tr>
+                  <td>Sabado </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt6" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt2','opt3','opt4','opt5','opt7']" (cdkDropListDropped)="drop($event)" id="opt6" [(ngModel)]="opt6" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt6">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct6}}</div>
+                  </td>
+                  <div *ngIf="mostrar">
+                    <a *ngIf="msj6" class="text-success"><i class="bi bi-check2"></i></a>
+                    <a *ngIf="!msj6" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                  </div>
+                </tr>
+                <tr>
+                  <td>Domingo </td>
+                  <td>
+                    <div cdkDropList class="example-list2" [cdkDropListData]="opt7" [cdkDropListConnectedTo]="['listasDeDias','opt1','opt2','opt3','opt4','opt5','opt6']" (cdkDropListDropped)="drop($event)" id="opt7" [(ngModel)]="opt7" required>
+                      <div class="example-box" cdkDrag *ngFor="let op of opt7">{{op}}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">{{correct7}}</div>
+                  </td>
+                  <td>
+                    <div *ngIf="mostrar">
+                      <a *ngIf="msj7" class="text-success"><i class="bi bi-check2"></i></a>
+                      <a *ngIf="!msj7" class="text-danger"><i class="bi bi-x-lg"></i></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <div style="text-align: center;">
+                <button class="btn btn-light" (click)="verRespuestas(total,res1,res2,res3,res4,res5,res6,res7)">Listo</button>
+              </div>
+
+            </table>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  <br>
+
+  <br>
+  <br>
+</div>
+

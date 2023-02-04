@@ -21,6 +21,8 @@ import { ListaClassComponent } from './lista-class/lista-class.component';
 import { BannerComponent } from './banner/banner.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CarrusComponent } from './carrus/carrus.component';
+import { DragDropDiasComponent } from './vocabulario/diassemanas/drag-drop-dias/drag-drop-dias.component';
+import { CalendarCComponent } from './vocabulario/diassemanas/calendar-c/calendar-c.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { CarrusComponent } from './carrus/carrus.component';
     ListaClassComponent,
     BannerComponent,
     InicioComponent,
-    CarrusComponent
+    CarrusComponent,
+    DragDropDiasComponent,
+    CalendarCComponent
   ],
   imports: [
     BrowserModule,
